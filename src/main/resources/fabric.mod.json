@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "tutorial",
+	"version": "${version}",
+	"name": "Tutorial",
+	"description": "The first mod built by Alex.",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/tutorial/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"alex.tutorial.Tutorial"
+		],
+		"client": [
+			"alex.tutorial.TutorialClient"
+		],
+		"fabric-datagen": [
+			"alex.tutorial.TutorialDataGenerator"
+		]
+	},
+	"mixins": [
+		"tutorial.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.13",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
