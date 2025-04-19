@@ -1,6 +1,7 @@
 package alex.tutorial;
 
 import alex.tutorial.item.ModItems;
+import alex.tutorial.block.ModBlocks;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -23,5 +24,6 @@ public class Tutorial implements ModInitializer {
 		LOGGER.info("Hello Fabric world!");
 
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "tutorial:block/minji_block"
+    }
+  }
+}
