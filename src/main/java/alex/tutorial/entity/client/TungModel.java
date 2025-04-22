@@ -2,14 +2,11 @@ package alex.tutorial.entity.client;
 
 import alex.tutorial.Tutorial;
 import net.minecraft.client.model.*;
-import net.minecraft.client.render.VertexConsumer;
 import net.minecraft.client.render.entity.model.BipedEntityModel;
 import net.minecraft.client.render.entity.model.EntityModelLayer;
 import net.minecraft.client.render.entity.model.EntityModelPartNames;
 import net.minecraft.client.render.entity.state.BipedEntityRenderState;
-import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.Identifier;
-import net.minecraft.client.model.ModelPart;
 
 // Made with Blockbench 4.12.4
 // Exported for Minecraft version 1.17+ for Yarn

@@ -3,7 +3,6 @@ package alex.tutorial.entity.client;
 import alex.tutorial.entity.custom.TungEntity;
 import net.minecraft.client.render.entity.EntityRendererFactory;
 import net.minecraft.client.render.entity.MobEntityRenderer;
-import net.minecraft.client.render.entity.state.BeeEntityRenderState;
 import net.minecraft.util.Identifier;
 
 

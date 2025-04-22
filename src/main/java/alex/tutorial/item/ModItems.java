@@ -2,7 +2,6 @@ package alex.tutorial.item;
 
 import alex.tutorial.Tutorial;
 import alex.tutorial.entity.ModEntities;
-import net.fabricmc.fabric.api.item.v1.FabricItem;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.*;
