@@ -1,9 +1,12 @@
 package alex.tutorial;
 
+import alex.tutorial.entity.ModEntities;
+import alex.tutorial.entity.custom.TungEntity;
 import alex.tutorial.item.ModItems;
 import alex.tutorial.block.ModBlocks;
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -15,6 +18,7 @@ public class Tutorial implements ModInitializer {
 	// That way, it's clear which mod wrote info, warnings, and errors.
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
+
 	@Override
 	public void onInitialize() {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
@@ -25,5 +29,9 @@ public class Tutorial implements ModInitializer {
 
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModEntities.registerModEntities();
+
+		FabricDefaultAttributeRegistry.register(ModEntities.TUNG, TungEntity.createAttributes());
+
 	}
 }

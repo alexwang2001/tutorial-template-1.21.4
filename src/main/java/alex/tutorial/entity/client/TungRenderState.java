@@ -1,0 +1,7 @@
+package alex.tutorial.entity.client;
+
+import net.minecraft.client.render.entity.state.BipedEntityRenderState;
+
+public class TungRenderState extends BipedEntityRenderState {
+
+}

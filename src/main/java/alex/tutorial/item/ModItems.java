@@ -1,10 +1,15 @@
 package alex.tutorial.item;
 
 import alex.tutorial.Tutorial;
+import alex.tutorial.entity.ModEntities;
+import net.fabricmc.fabric.api.item.v1.FabricItem;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.*;
-import net.minecraft.registry.*;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
@@ -26,8 +31,12 @@ public class ModItems {
         return item;
     }
 
+
     // ----------- ADD ITEMS HERE -------------
-    public static final Item TUNG_BAT = registerItem("tung_bat", Item::new, new Item.Settings());
+    public static final Item TUNG_BAT = registerItem("tung_bat", settings -> new SwordItem(ToolMaterial.WOOD, 1f, 1f, settings), new Item.Settings());
+    public static final Item TUNG_SPAWN_EGG = registerItem("tung_spawn_egg", settings -> new SpawnEggItem(ModEntities.TUNG, settings), new Item.Settings());
+
+
 
     public static void registerModItems(){
         Tutorial.LOGGER.info("registering mod item for" + Tutorial.MOD_ID);
@@ -39,6 +48,7 @@ public class ModItems {
 
         ItemGroupEvents.modifyEntriesEvent(MY_ITEM_GROUP_KEY).register(itemGroup -> {
             itemGroup.add(ModItems.TUNG_BAT);
+            itemGroup.add(ModItems.TUNG_SPAWN_EGG);
         }
         );
     }
