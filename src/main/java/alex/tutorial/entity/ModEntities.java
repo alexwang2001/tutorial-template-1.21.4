@@ -1,6 +1,7 @@
 package alex.tutorial.entity;
 
 import alex.tutorial.Tutorial;
+import alex.tutorial.entity.custom.TralaleroEntity;
 import alex.tutorial.entity.custom.TungEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
@@ -27,6 +28,9 @@ public class ModEntities {
     // APPLY
     public static final EntityType<TungEntity> TUNG = register(
             "tung", EntityType.Builder.create(TungEntity::new, SpawnGroup.CREATURE).dimensions(1F, 2F).eyeHeight(1.5F).maxTrackingRange(5)
+    );
+    public static final EntityType<TralaleroEntity> TRALALERO = register(
+            "tralalero", EntityType.Builder.create(TralaleroEntity::new, SpawnGroup.CREATURE).dimensions(1F, 2F).eyeHeight(1.5F).maxTrackingRange(10)
     );
 
     public static void registerModEntities() {

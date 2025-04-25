@@ -1,6 +1,7 @@
 package alex.tutorial;
 
 import alex.tutorial.entity.ModEntities;
+import alex.tutorial.entity.custom.TralaleroEntity;
 import alex.tutorial.entity.custom.TungEntity;
 import alex.tutorial.item.ModItems;
 import alex.tutorial.block.ModBlocks;
@@ -32,6 +33,7 @@ public class Tutorial implements ModInitializer {
 		ModEntities.registerModEntities();
 
 		FabricDefaultAttributeRegistry.register(ModEntities.TUNG, TungEntity.createAttributes());
+		FabricDefaultAttributeRegistry.register(ModEntities.TRALALERO, TralaleroEntity.createAttributes());
 
 	}
 }

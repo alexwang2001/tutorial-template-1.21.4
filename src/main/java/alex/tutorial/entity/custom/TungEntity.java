@@ -33,10 +33,10 @@ public class TungEntity extends HostileEntity {
         this.goalSelector.add(1, new SwimGoal(this));
         this.goalSelector.add(2, new MeleeAttackGoal(this, 1.0, false));
         this.goalSelector.add(3, new WanderAroundFarGoal(this, 0.8));
-        //this.goalSelector.add(4, new LookAtEntityGoal(this, TungEntity.class, 8.0F));
+        this.goalSelector.add(4, new LookAtEntityGoal(this, TralaleroEntity.class, 8.0F));
         this.goalSelector.add(4, new LookAtEntityGoal(this, PlayerEntity.class, 8.0F));
         this.goalSelector.add(4, new LookAroundGoal(this));
-        //this.targetSelector.add(1, new ActiveTargetGoal<>(this, TungEntity.class, true));
+        this.targetSelector.add(1, new ActiveTargetGoal<>(this, TralaleroEntity.class, true));
         this.targetSelector.add(1, new ActiveTargetGoal<>(this, PlayerEntity.class, true));
         this.targetSelector.add(2, new RevengeGoal(this));
     }
